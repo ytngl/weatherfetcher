@@ -11,13 +11,15 @@ from sys import argv
 key = ""
 
 # Zipcode caught from user input
+# Option 1
 zipcode = argv[1]
 
-# look-up location
+# Zipcode look-up
+# Option 2
 ip = os.popen('curl -s ifconfig.io').read()
 ip_location = requests.get('http://ip-api.com/json')
 ip_data = json.loads(ip_location.content)
-
+# zipcode = ip_data["zip"]
 
 # weather API
 parameter = {'key': key, 'q': zipcode}

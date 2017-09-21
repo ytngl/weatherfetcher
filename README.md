@@ -5,7 +5,7 @@ Fetches weather for a zipcode.
 ## TODO
 
 * Get your api from [here](https://www.apixu.com/).
-* Make a file named ``key`` and put your key in it. 
+* Place key into code ``key = "(your key)"``. 
 * Run `` pip install -r requirements.txt ``
 
 ## Usage
